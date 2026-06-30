@@ -61,14 +61,14 @@ const LiveStat = ({
 const TELEGRAM_URL = 'https://t.me/SA1KOVV';
 
 const Index = () => {
-  const [subs, setSubs] = useState(48217);
-  const [online, setOnline] = useState(1342);
+  const [subs, setSubs] = useState(120);
+  const [online, setOnline] = useState(18);
 
   useEffect(() => {
     const t = setInterval(() => {
-      setSubs((s) => s + Math.floor(Math.random() * 3));
-      setOnline(() => 1200 + Math.floor(Math.random() * 400));
-    }, 2500);
+      setSubs((s) => s + (Math.random() > 0.7 ? 1 : 0));
+      setOnline(() => 12 + Math.floor(Math.random() * 14));
+    }, 3000);
     return () => clearInterval(t);
   }, []);
 
@@ -88,7 +88,7 @@ const Index = () => {
       {/* NAV */}
       <header className="relative z-20 max-w-6xl mx-auto px-6 py-7 flex items-center justify-between">
         <div className="font-display font-700 text-2xl tracking-wide">
-          МАС<span className="text-gradient">ШТАБ</span>
+          SA1<span className="text-gradient">KOV</span>
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/60">
           <a href="#about" className="hover:text-white transition-colors">О канале</a>
@@ -136,10 +136,10 @@ const Index = () => {
           <div className="relative animate-float">
             <div className="glass rounded-[2rem] p-8 relative">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00E5FF] to-[#FF2E92] flex items-center justify-center font-display font-700 text-xl">М</div>
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00E5FF] to-[#FF2E92] flex items-center justify-center font-display font-700 text-xl">S</div>
                 <div>
-                  <div className="font-600">МАСШТАБ</div>
-                  <div className="text-xs text-white/40">@masshtab_money</div>
+                  <div className="font-600">SA1KOV</div>
+                  <div className="text-xs text-white/40">@SA1KOVV</div>
                 </div>
               </div>
               <div className="font-display text-6xl font-700 tabular-nums text-white">
@@ -181,10 +181,10 @@ const Index = () => {
           </h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <LiveStat target={48217} label="Подписчиков" icon="Users" live />
-          <LiveStat target={1200} label="Постов о заработке" icon="FileText" suffix="+" />
-          <LiveStat target={97} label="Дочитывают до конца" icon="Eye" suffix="%" />
-          <LiveStat target={5} label="Лет о деньгах" icon="Calendar" suffix=" лет" />
+          <LiveStat target={120} label="Подписчиков" icon="Users" live />
+          <LiveStat target={30} label="Постов о заработке" icon="FileText" suffix="+" />
+          <LiveStat target={95} label="Дочитывают до конца" icon="Eye" suffix="%" />
+          <LiveStat target={1} label="Год о деньгах" icon="Calendar" suffix=" год" />
         </div>
       </section>
 
@@ -243,8 +243,8 @@ const Index = () => {
       {/* FOOTER */}
       <footer className="relative z-10 border-t border-white/10 mt-10">
         <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-white/40 text-sm">
-          <div className="font-display font-700 text-xl text-white">МАС<span className="text-gradient">ШТАБ</span></div>
-          <p>© 2026 МАСШТАБ. Канал о заработке и мотивации.</p>
+          <div className="font-display font-700 text-xl text-white">SA1<span className="text-gradient">KOV</span></div>
+          <p>© 2026 SA1KOV. Канал о заработке и мотивации.</p>
           <div className="flex gap-4">
             <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
               <Icon name="Send" size={18} className="hover:text-white transition-colors cursor-pointer" />
