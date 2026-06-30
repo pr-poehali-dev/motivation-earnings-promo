@@ -242,8 +242,8 @@ const Index = () => {
               </p>
               <div className="flex items-center justify-between mt-5">
                 <div className="flex items-center gap-4 text-white/40 text-sm">
-                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 248</span>
-                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 1.2к</span>
+                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 14</span>
+                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 87</span>
                 </div>
                 <span className="text-white/30 text-xs">Сегодня</span>
               </div>
@@ -274,8 +274,8 @@ const Index = () => {
               </p>
               <div className="flex items-center justify-between mt-5">
                 <div className="flex items-center gap-4 text-white/40 text-sm">
-                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 312</span>
-                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 1.8к</span>
+                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 21</span>
+                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 103</span>
                 </div>
                 <span className="text-white/30 text-xs">Вчера</span>
               </div>
