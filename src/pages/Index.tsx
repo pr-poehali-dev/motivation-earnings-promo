@@ -58,7 +58,7 @@ const LiveStat = ({
   );
 };
 
-const TELEGRAM_URL = 'https://t.me/masshtab_money';
+const TELEGRAM_URL = 'https://t.me/SA1KOVV';
 
 const Index = () => {
   const [subs, setSubs] = useState(48217);
