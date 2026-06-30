@@ -58,6 +58,8 @@ const LiveStat = ({
   );
 };
 
+const TELEGRAM_URL = 'https://t.me/masshtab_money';
+
 const Index = () => {
   const [subs, setSubs] = useState(48217);
   const [online, setOnline] = useState(1342);
@@ -93,8 +95,10 @@ const Index = () => {
           <a href="#content" className="hover:text-white transition-colors">Контент</a>
           <a href="#join" className="hover:text-white transition-colors">Подписка</a>
         </nav>
-        <Button className="rounded-full bg-white text-black hover:bg-white/90 font-600">
-          <Icon name="Send" size={16} className="mr-1.5" /> Telegram
+        <Button asChild className="rounded-full bg-white text-black hover:bg-white/90 font-600">
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+            <Icon name="Send" size={16} className="mr-1.5" /> Telegram
+          </a>
         </Button>
       </header>
 
@@ -117,8 +121,10 @@ const Index = () => {
               реально двигает тебя к деньгам и свободе.
             </p>
             <div className="flex flex-wrap items-center gap-4 mt-9">
-              <Button className="rounded-full h-14 px-8 text-base font-600 bg-gradient-to-r from-[#00E5FF] via-[#7C4DFF] to-[#FF2E92] text-white hover:opacity-90 transition-opacity">
-                <Icon name="Send" size={18} className="mr-2" /> Подписаться бесплатно
+              <Button asChild className="rounded-full h-14 px-8 text-base font-600 bg-gradient-to-r from-[#00E5FF] via-[#7C4DFF] to-[#FF2E92] text-white hover:opacity-90 transition-opacity">
+                <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" size={18} className="mr-2" /> Подписаться бесплатно
+                </a>
               </Button>
               <a href="#content" className="text-white/70 hover:text-white transition-colors flex items-center gap-2 text-sm">
                 Что внутри <Icon name="ArrowDown" size={16} />
@@ -222,8 +228,10 @@ const Index = () => {
               Присоединяйся к {subs.toLocaleString('ru-RU')} читателям, которые меняют
               отношение к деньгам. Один шаг — и ты внутри.
             </p>
-            <Button className="rounded-full h-15 px-10 py-7 mt-9 text-lg font-600 bg-white text-black hover:bg-white/90">
-              <Icon name="Send" size={20} className="mr-2" /> Перейти в Telegram
+            <Button asChild className="rounded-full h-15 px-10 py-7 mt-9 text-lg font-600 bg-white text-black hover:bg-white/90">
+              <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" size={20} className="mr-2" /> Перейти в Telegram
+              </a>
             </Button>
             <div className="flex items-center justify-center gap-2 mt-5 text-white/40 text-sm">
               <Icon name="ShieldCheck" size={15} /> Никакого спама. Только польза.
@@ -238,7 +246,9 @@ const Index = () => {
           <div className="font-display font-700 text-xl text-white">МАС<span className="text-gradient">ШТАБ</span></div>
           <p>© 2026 МАСШТАБ. Канал о заработке и мотивации.</p>
           <div className="flex gap-4">
-            <Icon name="Send" size={18} className="hover:text-white transition-colors cursor-pointer" />
+            <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+              <Icon name="Send" size={18} className="hover:text-white transition-colors cursor-pointer" />
+            </a>
             <Icon name="Instagram" size={18} className="hover:text-white transition-colors cursor-pointer" />
             <Icon name="Youtube" size={18} className="hover:text-white transition-colors cursor-pointer" />
           </div>
