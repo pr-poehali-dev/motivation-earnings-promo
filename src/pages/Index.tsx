@@ -212,6 +212,86 @@ const Index = () => {
         </div>
       </section>
 
+      {/* POSTS */}
+      <section id="posts" className="relative z-10 max-w-6xl mx-auto px-6 py-12">
+        <div className="max-w-2xl mb-14">
+          <span className="text-[#7C4DFF] font-600 text-sm uppercase tracking-widest">Последние посты</span>
+          <h2 className="font-display font-700 text-4xl md:text-5xl uppercase mt-4 leading-tight">
+            Вот чем живёт<br /><span className="text-gradient">канал</span>
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+
+          {/* POST 1 — фото с цитатой */}
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"
+            className="glass rounded-3xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 block">
+            <div className="relative h-64 overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/projects/c5e07db2-61bd-4592-bee5-00f7b7d68b47/files/27ce1482-a0c8-4990-9e66-7abac027cb37.jpg"
+                alt="Мотивация"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <span className="absolute top-4 left-4 glass rounded-full px-3 py-1 text-xs flex items-center gap-1.5">
+                <Icon name="Image" size={12} className="text-[#00E5FF]" /> Фото
+              </span>
+            </div>
+            <div className="p-7">
+              <p className="font-display text-xl font-600 uppercase leading-tight">
+                "Не смей говорить тебе повезло —<br />я падал больше раз, чем вы пытались"
+              </p>
+              <div className="flex items-center justify-between mt-5">
+                <div className="flex items-center gap-4 text-white/40 text-sm">
+                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 248</span>
+                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 1.2к</span>
+                </div>
+                <span className="text-white/30 text-xs">Сегодня</span>
+              </div>
+            </div>
+          </a>
+
+          {/* POST 2 — видео */}
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"
+            className="glass rounded-3xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 block">
+            <div className="relative h-64 overflow-hidden bg-gradient-to-br from-[#7C4DFF]/40 to-[#FF2E92]/30 flex items-center justify-center">
+              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOEwyNCA0MlY0MmwxMi0yNHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L2c+PC9zdmc+')] opacity-20" />
+              <div className="relative z-10 text-center">
+                <div className="w-20 h-20 rounded-full bg-white/10 border-2 border-white/30 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Icon name="Play" size={32} className="text-white ml-1" />
+                </div>
+                <span className="text-white/50 text-sm">Нажми, чтобы посмотреть</span>
+              </div>
+              <span className="absolute top-4 left-4 glass rounded-full px-3 py-1 text-xs flex items-center gap-1.5">
+                <Icon name="Video" size={12} className="text-[#FF2E92]" /> Видео
+              </span>
+              <span className="absolute bottom-4 right-4 glass rounded-full px-3 py-1 text-xs text-white/60">
+                1:24
+              </span>
+            </div>
+            <div className="p-7">
+              <p className="font-display text-xl font-600 uppercase leading-tight">
+                "Ты думаешь, что реально так важно,<br />что о тебе подумают?"
+              </p>
+              <div className="flex items-center justify-between mt-5">
+                <div className="flex items-center gap-4 text-white/40 text-sm">
+                  <span className="flex items-center gap-1"><Icon name="Heart" size={14} /> 312</span>
+                  <span className="flex items-center gap-1"><Icon name="Eye" size={14} /> 1.8к</span>
+                </div>
+                <span className="text-white/30 text-xs">Вчера</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div className="text-center mt-10">
+          <Button asChild variant="outline" className="rounded-full px-8 border-white/20 text-white hover:bg-white/10 hover:text-white">
+            <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Смотреть все посты <Icon name="ArrowRight" size={16} className="ml-2" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
       {/* JOIN / CTA */}
       <section id="join" className="relative z-10 max-w-6xl mx-auto px-6 py-24">
         <div className="glass rounded-[2.5rem] p-10 md:p-16 text-center relative overflow-hidden">
