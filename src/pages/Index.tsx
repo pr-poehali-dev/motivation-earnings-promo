@@ -182,7 +182,7 @@ const Index = () => {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <LiveStat target={120} label="Подписчиков" icon="Users" live />
-          <LiveStat target={30} label="Постов о заработке" icon="FileText" suffix="+" />
+          <LiveStat target={10} label="Постов о заработке" icon="FileText" suffix="+" />
           <LiveStat target={95} label="Дочитывают до конца" icon="Eye" suffix="%" />
           <LiveStat target={1} label="Год о деньгах" icon="Calendar" suffix=" год" />
         </div>
